@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pointerMouse</title>
+    <link rel="shortcut icon" href="images/mouseicon.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(15, 15, 15);
+        }
+        img{
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <img src="" alt="">
+    <script>
+        let im=document.querySelector("img");
+        document.addEventListener("mousemove",(e)=>{
+            let x=e.screenX;
+            let y=e.screenY;
+            if(x<367){
+                if(y<200){
+                    // this is box1
+                    im.src="images/box1.jpeg"
+                }
+                else if(y>200 && y<400){
+                    // this is box5
+                    im.src="images/box5.jpeg"
+                }
+                else if(y>400 && y<600){
+                    // this is box9
+                    im.src="images/box9.jpeg"
+                }
+                else if(y>600 && y<800){
+                    // this is box13
+                    im.src="images/box13.jpeg"
+                }
+            }
+
+            else if(x>365 && x<734){
+                if(y<200){
+                    // this is box2
+                    im.src="images/box2.jpeg"
+                }
+                else if(y>200 && y<400){
+                    // this is box6
+                    im.src="images/box6.jpeg"
+                }
+                else if(y>400 && y<600){
+                    // this is box10
+                    im.src="images/box10.jpeg"
+                }
+                else if(y>600 && y<800){
+                    // this is box14
+                    im.src="images/box14.jpeg"
+                }
+            }
+
+            else if(x>734 && x<1101){
+                if(y<200){
+                    // this is box3
+                    im.src="images/box3.jpeg"
+                }
+                else if(y>200 && y<400){
+                    // this is box7
+                    im.src="images/box7.jpeg"
+                }
+                else if(y>400 && y<600){
+                    // this is box11
+                    im.src="images/box11.jpeg"
+                }
+                else if(y>600 && y<800){
+                    // this is box15
+                    im.src="images/box15.jpeg"
+                }
+            }
+
+            else if(x>1101 && x<1469){
+                if(y<200){
+                    // this is box4
+                    im.src="images/box4.jpeg"
+                }
+                else if(y>200 && y<400){
+                    // this is box8
+                    im.src="images/box8.jpeg"
+                }
+                else if(y>400 && y<600){
+                    // this is box12
+                    im.src="images/box12.jpeg"
+                }
+                else if(y>600 && y<800){
+                    // this is box16
+                    im.src="images/box16.jpeg"
+                }
+            }
+        })
+    </script>
+</body>
+</html>
